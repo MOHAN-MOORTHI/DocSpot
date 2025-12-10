@@ -1,16 +1,53 @@
-# React + Vite
+This is a very simple admin panel starter made with React + Vite.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+npm create vite@latest admin -- --template react
+cd admin
 
-Currently, two official plugins are available:
+npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+npm install react-router-dom
 
-## React Compiler
+npm install axios
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+npm install tailwindcss
 
-## Expanding the ESLint configuration
+npm install @tailwindcss/vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react-swc'
+import tailwindcss from '@tailwindcss/vite'
+
+@import "tailwindcss";
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [
+    react(),
+    tailwindcss()
+  ],
+  server: { port: 5174 }
+})
+=============================================================
+npm install react-toastify
+
+npm install react
+npm install react-dom
+
+npm install -D @vitejs/plugin-react-swc
+
+npm install -D eslint
+
+npm install -D @eslint/js
+
+npm install -D eslint-plugin-react-hooks
+
+npm install -D eslint-plugin-react-refresh
+
+npm install -D @types/react @types/react-dom
+
+npm install -D vite
+
+npm install -D globals
+
+VITE_BACKEND_URL = 'http://localhost:4000'
+=============================================================
