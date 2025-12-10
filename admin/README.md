@@ -8,7 +8,7 @@ npm run dev
 npm install react-router-dom
 
 npm install axios
-
+========================================================
 npm install tailwindcss
 
 npm install @tailwindcss/vite
