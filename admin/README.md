@@ -27,7 +27,7 @@ export default defineConfig({
   ],
   server: { port: 5174 }
 })
-=============================================================
+=========================================================
 npm install react-toastify
 
 npm install react
